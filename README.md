@@ -1,2 +1,2 @@
 # vim-config
-cd && git clone git@github.com:kradio3/vim-config.git .vim
+``` cd && git clone https://github.com/kradio3/vim-config.git .vim ```
