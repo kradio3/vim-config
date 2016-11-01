@@ -42,8 +42,11 @@ command! JscsFix :call JscsFix()
 "Run the JscsFix command just before the buffer is written for *.js files"
 "autocmd BufWritePre *.js JscsFix
 
-imap <F7> <esc>:JscsFix<CR>mzgg=G`z
-nmap <F7> :JscsFix<CR>mzgg=G`z
+"imap <F7> <esc>:JscsFix<CR>mzgg=G`z
+"nmap <F7> :JscsFix<CR>mzgg=G`z
+
+imap <F7> <esc>mzgg=G`z
+nmap <F7>mzgg=G`z
 
 imap <F2> <esc>:NERDTreeFocus<CR>
 nmap <F2> :NERDTreeFocus<CR>
