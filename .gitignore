@@ -1,0 +1,5 @@
+*.swm
+*.swn
+*.swo
+*.swp
+/bundle/MatchTagAlways/python/__pycache__/
