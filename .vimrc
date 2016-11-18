@@ -8,8 +8,6 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 map <C-n> :NERDTreeToggle<CR>
-imap <F7> mzgg=G`z
-nmap <F7> mzgg=G`z
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 let g:jsx_ext_required = 0
@@ -46,7 +44,7 @@ command! JscsFix :call JscsFix()
 "nmap <F7> :JscsFix<CR>mzgg=G`z
 
 imap <F7> <esc>mzgg=G`z
-nmap <F7>mzgg=G`z
+nmap <F7> mzgg=G`z
 
 imap <F2> <esc>:NERDTreeFocus<CR>
 nmap <F2> :NERDTreeFocus<CR>
