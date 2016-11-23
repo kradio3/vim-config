@@ -11,7 +11,6 @@ map <C-n> :NERDTreeToggle<CR>
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 let g:jsx_ext_required = 0
-set guifont=Cousine\ 11
 let g:mta_filetypes = {
       \ 'html' : 1,
       \ 'xhtml' : 1,
