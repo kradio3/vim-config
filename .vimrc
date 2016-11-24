@@ -69,3 +69,9 @@ set wildignore+=*/node_modules/*
 
 "highlight search matches
 set hlsearch
+
+"Buffer navigation using arrows
+nnoremap <Right> <C-w>l
+nnoremap <Left> <C-w>h
+nnoremap <Up> <C-w>k
+nnoremap <Down> <C-w>j
