@@ -10,7 +10,14 @@ filetype plugin indent on
 map <C-n> :NERDTreeToggle<CR>
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
 let g:jsx_ext_required = 0
+
+"MatchTagAlways silent run
+if !( has( 'python' ) || has( 'python3' ) )
+  let g:loaded_matchtagalways = 1
+endif
+
 let g:mta_filetypes = {
       \ 'html' : 1,
       \ 'xhtml' : 1,
@@ -18,6 +25,7 @@ let g:mta_filetypes = {
       \ 'jinja' : 1,
       \ 'javascript.jsx' : 1,
       \}
+
 imap <C-esc> <esc>:q<CR>
 nmap <C-esc> :q<CR>
 
