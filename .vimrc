@@ -4,6 +4,7 @@ set number
 set expandtab
 set shiftwidth=2
 set softtabstop=2
+set noswapfile
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
@@ -83,3 +84,8 @@ nnoremap <C-l> <C-w>l
 nnoremap <C-h> <C-w>h
 nnoremap <C-k> <C-w>k
 nnoremap <C-j> <C-w>j
+
+colorscheme molokai
+hi Visual ctermbg=240
+hi Normal ctermbg=0
+hi Comment ctermfg=243
