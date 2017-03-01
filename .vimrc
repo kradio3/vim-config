@@ -89,3 +89,4 @@ colorscheme molokai
 hi Visual ctermbg=240
 hi Normal ctermbg=0
 hi Comment ctermfg=243
+hi MatchParen ctermfg=208  ctermbg=240
