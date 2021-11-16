@@ -62,15 +62,17 @@ nmap <F2> :NERDTreeFocus<CR>
 "set statusline+=%{SyntasticStatuslineFlag()}
 "set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_javascript_checkers = ['eslint']
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 0
+"let g:syntastic_javascript_checkers = ['eslint']
+"
 "let g:syntastic_javascript_eslint_exec = 'eslint_d'
 
-let g:syntastic_java_javac_classpath="build/classes:lib/*.jar"
+"let g:syntastic_java_javac_classpath="build/classes:lib/*.jar"
 
+filetype indent plugin on
 
 "CtrlP
 let g:ctrlp_map = '<c-p>'
@@ -85,8 +87,13 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-k> <C-w>k
 nnoremap <C-j> <C-w>j
 
-colorscheme molokai
-hi Visual ctermbg=240
-hi Normal ctermbg=0
-hi Comment ctermfg=243
-hi MatchParen ctermfg=208  ctermbg=240
+set t_Co=256   " This is may or may not needed.
+
+set background=light
+colorscheme PaperColor
+"set t_Co=256
+"colorscheme molokai
+"hi Visual ctermbg=240
+"hi Normal ctermbg=0
+"hi Comment ctermfg=243
+"hi MatchParen ctermfg=208  ctermbg=240
